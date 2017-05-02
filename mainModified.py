@@ -24,7 +24,7 @@ for col_name in complete_data:
 			legitimate_skip_freq=len(complete_data[complete_data[col_name]==legitimate_skip_id])
 		if legitimate_skip_freq > int(num_samples*p):
 			del_features.append(col_name) #delete ith column
-complete_data.drop(del_features,axis=1)
+complete_data.drop(del_features,axis=1,inplace=True)
 print("Feature selection ended")
 complete_data.to_csv("subset2.csv")
 print("Final shape " + str(complete_data.shape))
