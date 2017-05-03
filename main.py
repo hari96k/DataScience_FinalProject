@@ -7,7 +7,6 @@ from sklearn.neighbors import KNeighborsClassifier
 from sklearn.ensemble import RandomForestClassifier, ExtraTreesClassifier, VotingClassifier
 from sklearn import cross_validation
 from sklearn import metrics
-import xgboost as xgb
 import matplotlib.pyplot as plt
 
 complete_data = pd.read_csv("raw.csv")
@@ -34,13 +33,8 @@ for col_idx in xrange(len(complete_data)):
 for col_idx in del_features:
 	del complete_data[col_idx]
 
-
-	
-
-
-
-
-
-
+print del_features 
 
 #K-fold on complete_data to create training and testing
+
+
