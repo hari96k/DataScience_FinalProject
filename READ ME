@@ -1,0 +1,7 @@
+All of files(including the data set) can be found at our git (shared with Dimakis):
+	https://github.com/hari96k/DataScience_FinalProject
+	
+Feature Selection methodologies are in Feature_Selection.ipynb
+Stacking/All models are in stacking3.ipynb
+
+Raw.zip contains the entire data set without any feature reduction
